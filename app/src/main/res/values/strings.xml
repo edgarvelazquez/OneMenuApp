@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">OneMenu</string>
+    <string name="password">password</string>
+    <string name="email">e-mail</string>
+    <string name="edit">edit</string>
+    <string name="meat">meat</string>
+    <string name="vegetable">vegetable</string>
+    <string name="misc">misc</string>
+    <string name="comma">, </string>
+    <string name="period">.</string>
+    <string name="colon">: </string>
+    <string name="new_review">New Review</string>
+    <string name="submit_review">Submit Review</string>
+    <string name="choose_photo">Choose Image</string>
+
+
+    <!--ingredients-->
+    <!--meats-->
+    <string name="chicken">chicken</string>
+    <string name="beef">beef</string>
+    <string name="pork">pork</string>
+    <string name="fish">fish</string>
+    <!--vegetables-->
+    <string name="tomato">tomato</string>
+    <string name="lettuce">lettuce</string>
+    <string name="onion">onion</string>
+    <string name="potato">potato</string>
+    <!--misc-->
+    <string name="ketchup">ketchup</string>
+    <string name="bun">bun</string>
+    <string name="mustard">mustard</string>
+    <string name="mayonnaise">mayonnaise</string>
+
+
+    <string name="title_activity_food__preference">Food_Preference</string>
+    <string name="title_activity_food_preference">FoodPreference</string>
+
+    <!--    <string name=""></string>-->
+    <string name="emailEnglish">Email</string>
+    <string name="LoginFail">Login Fail</string>
+    <string name="android"> Android </string>
+    <string name="signOut"> Sign Out </string>
+    <string name="submit">submit</string>
+    <string name="title_activity_foodpref">foodpref</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+    <!--    menu sample-->
+    <string name="burger">Burger</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_search">search</string>
+    <string name="menu_profile">profile</string>
+    <string name="menu_settings">settings</string>
+    <string name="preferences_edith">Food Preferences</string>
+    <string name="add_review">Add Review</string>
+    <string name="enter_your_review">Enter your review about this meal.</string>
+
+
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "821952472209",
+    "firebase_url": "https://onemenu-4c794.firebaseio.com",
+    "project_id": "onemenu-4c794",
+    "storage_bucket": "onemenu-4c794.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:821952472209:android:9ef03a3e105a13f8598b30",
+        "android_client_info": {
+          "package_name": "com.aje.onemenu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "821952472209-od5mpms3of1g9grre0epnct28ir33395.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aje.onemenu",
+            "certificate_hash": "c98af19012ffff0dc9293f8484c41d760e44026e"
+          }
+        },
+        {
+          "client_id": "821952472209-ca671jg90no4oaqt1sep43qf5v74qmoq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNwBIP7LtgpYNKqBbwNxinulBhV0BURuc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "821952472209-ueg7ahfou5dr3c67c6s3c0h6aa010euo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

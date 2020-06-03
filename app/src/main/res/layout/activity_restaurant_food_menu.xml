@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<!--    <SearchView-->
+<!--        android:id="@+id/simpleSearchView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:queryHint="search for restaurants"/>-->
+
+    <RelativeLayout
+        android:id="@+id/list_Rlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="50dp">>
+
+        <ScrollView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/recommended_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Recommended for you"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="#20B2AA"/>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_margin="10dp"
+                        android:layout_marginStart="200dp"
+                        android:layout_marginTop="200dp"
+                        android:layout_marginEnd="200dp"
+                        android:layout_marginBottom="200dp"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:id="@+id/recommended_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            />
+                    </HorizontalScrollView>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/meal_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <TextView
+                        android:id="@+id/MealsText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Meals"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="#20B2AA"/>
+                    <HorizontalScrollView
+                        android:id="@+id/meal_scroller"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_margin="10dp"
+                        android:layout_marginStart="200dp"
+                        android:layout_marginTop="200dp"
+                        android:layout_marginEnd="200dp"
+                        android:layout_marginBottom="200dp"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:id="@+id/main_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:clickable="true"/>
+                    </HorizontalScrollView>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/appetizer_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <TextView
+                        android:id="@+id/AppetizersText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Appetizers"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="#20B2AA"/>
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_margin="10dp"
+                        android:layout_marginStart="200dp"
+                        android:layout_marginTop="200dp"
+                        android:layout_marginEnd="200dp"
+                        android:layout_marginBottom="200dp"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:id="@+id/appetizer_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal" />
+                    </HorizontalScrollView>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/beverage_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <TextView
+                        android:id="@+id/BeverageText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Beverages"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="#20B2AA"/>
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_margin="10dp"
+                        android:layout_marginStart="200dp"
+                        android:layout_marginTop="200dp"
+                        android:layout_marginEnd="200dp"
+                        android:layout_marginBottom="200dp"
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/beverage_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal" />
+                    </HorizontalScrollView>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/dessert_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <TextView
+                        android:id="@+id/DessertsText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Deserts"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="#20B2AA"/>
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_margin="10dp"
+                        android:layout_marginStart="200dp"
+                        android:layout_marginTop="200dp"
+                        android:layout_marginEnd="200dp"
+                        android:layout_marginBottom="200dp">
+
+                        <LinearLayout
+                            android:id="@+id/dessert_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal" />
+                    </HorizontalScrollView>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/try_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <TextView
+                        android:id="@+id/TryText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Try Something new"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="#20B2AA"/>
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_margin="10dp"
+                        android:layout_marginStart="200dp"
+                        android:layout_marginTop="200dp"
+                        android:layout_marginEnd="200dp"
+                        android:layout_marginBottom="200dp">
+
+                        <LinearLayout
+                            android:id="@+id/try_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal" />
+                    </HorizontalScrollView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragment"
+            class="com.aje.onemenu.fragments.NavBarFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0dp"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </LinearLayout>
+
+</RelativeLayout>
+

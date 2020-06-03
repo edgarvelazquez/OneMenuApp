@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aje.onemenu">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_icon2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_icon2_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.RecommendedRestaurantActivity"></activity>
+        <activity android:name=".activities.MealActivity" />
+        <activity android:name=".activities.RestaurantsList" />
+        <activity android:name=".activities.RestaurantMenuActivity" />
+        <activity android:name=".activities.FoodDescription" />
+        <activity android:name=".activities.RestaurantsMenu" />
+        <activity android:name=".activities.FoodPreference" />
+        <activity android:name=".settings.UserInfoActivity" />
+        <activity android:name=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Profile"
+            android:label="@string/app_name" />
+    </application>
+
+</manifest>
